@@ -1,14 +1,6 @@
-<<<<<<< HEAD
 import { LazyPage1 } from '../01-lazyload/pages/LazyPage1';
 import { LazyPage2 } from '../01-lazyload/pages/LazyPage2';
 import { LazyPage3 } from '../01-lazyload/pages/LazyPage3';
-=======
-import { lazy, LazyExoticComponent } from 'react';
-// import { LazyPage1 } from '../01-lazyload/pages/LazyPage1';
-
-
-type JSXComponent = () => JSX.Element;
->>>>>>> parent of bce8d28 (Update routes.ts)
 
 interface Route {    
     to: string,
