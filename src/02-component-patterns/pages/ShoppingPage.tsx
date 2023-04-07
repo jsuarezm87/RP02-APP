@@ -1,16 +1,12 @@
 import { ProductCard, ProductImage, ProductTitle, ProductButtons } from '../components';
+import '../styles/custom-styles.css';
 
-const productCoffe = {
+const product = {
   id: '1',
-  title: 'Coffee Mug - Card',
+  title: 'Coffee Mug',
   img: './coffee-mug.png'
 }
 
-const productCoffe2 = {
-  id: '1',
-  title: 'Coffee Mug - Card',
-  img: ''
-}
 
 export const ShoppingPage = () => {
   return (
@@ -23,16 +19,38 @@ export const ShoppingPage = () => {
           flexWrap: 'wrap'
         }}
         >
-          <ProductCard product={ productCoffe } > 
-            <ProductCard.Image />
-            <ProductCard.Title />
-            <ProductCard.Buttons />          
+          <ProductCard 
+            product={ product }
+            className='bg-dark text-white' 
+          > 
+              <ProductCard.Image className='custom-image' />
+              <ProductCard.Title  className='text-bold' />
+              <ProductCard.Buttons className='custom-buttons' />          
           </ProductCard>
 
-           <ProductCard product={ productCoffe2 } > 
-            <ProductImage img={'./coffee-mug.png'}/>
-            <ProductTitle title={'Tasa de Café'}/>
-            <ProductButtons />          
+           <ProductCard 
+              product={ product }
+              className='bg-dark text-white'
+           > 
+              <ProductImage 
+                img={'./coffee-mug.png'}
+                className='custom-image'
+                style={{ boxShadow: '10px 10px 10px rgba(0,0,0,0.2)' }}
+              />
+              <ProductTitle 
+                title={'Tasa de Café'} 
+                className='text-bold'
+              />
+              <ProductButtons className='custom-buttons' />  
+          </ProductCard>
+
+          <ProductCard 
+              product={ product }
+              style={{ backgroundColor: '#70D1F8' }}
+           > 
+              <ProductImage style={{ boxShadow: '10px 10px 10px rgba(0,0,0,0.2)' }} />
+              <ProductTitle style={{ fontWeight: 'bold' }} />
+              <ProductButtons style={{ display: 'flex', justifyContent: 'end' }}/>  
           </ProductCard>
         </div>
     </div>
