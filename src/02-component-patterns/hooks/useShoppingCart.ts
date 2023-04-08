@@ -31,16 +31,3 @@ export const useShoppingCart = () => {
         onProductCountChange
     }
 }
-
-
- // setShoppingCart( oldShoppingCart => {  
-//   if ( count === 0 ) {
-//     const { [product.id] : deleteProduc, ...newShoppingCart } = oldShoppingCart;
-//     return newShoppingCart;
-//   }
-
-//   return {
-//     ...oldShoppingCart,
-//     [product.id] : { ...product, count }
-//   }
-// });    
