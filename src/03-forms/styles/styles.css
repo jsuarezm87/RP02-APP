@@ -23,3 +23,8 @@ span, .error-message {
 .has-error {
     border: 1px solid red;
 }
+
+.left-aligned-field {
+    text-align: left;
+    margin-left: 0;
+  }
