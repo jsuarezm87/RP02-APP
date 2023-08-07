@@ -1,0 +1,49 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "Jhonnatan",
+        "label": "First Name",
+        "value": "",
+        "validations": [
+            {"type": "required", "label": "Este campo es requerido"},
+            {"type": "minLength", "value": 5, "label": "Debe tener minimo 5 caracteres"}
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "Suarez Monzon",
+        "label": "Last Name",
+        "value": "",
+        "validations": [
+            {"type": "required", "label": "Este campo es requerido"},
+            {"type": "minLength", "value": 5, "label": "Debe tener minimo 5 caracteres"}
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "jonathan@gmail.com",
+        "label": "Email",
+        "value": "",
+        "validations": [
+            {"type": "required", "label": "Este campo es requerido"},
+            {"type": "email", "label": "El email no tiene un formato valido"}
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite game",
+        "value": "",
+        "options": [
+            {"id": 1, "label": "Super smash bros ultimate"},     
+            {"id": 2, "label": "Zelda link's awakening"},     
+            {"id": 3, "label": "Mario kart 8 deluxe"}     
+        ],
+        "validations": [
+            {"type": "required", "label": "Este campo es requerido"}
+        ]
+    }
+]
